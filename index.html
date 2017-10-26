@@ -1,0 +1,239 @@
+<HTML>
+<HEAD>
+  
+  <TITLE>league guides :)</TITLE>
+
+</HEAD>
+
+<BODY bgcolor='sky blue'>
+
+<TABLE>
+<html>
+<head>
+<style>
+
+<head>
+
+
+</body>
+
+<html>
+<head>
+<style>
+#video{
+  padding-left:700px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ff66cc;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding:16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-color:#cc9999;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; / Prevent double borders /
+  background-color: #666666;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #000033;
+}
+body {margin:0;}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.Main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#"><font color=' #ccffff'>azir</font></a></li>
+  <li><a href="#"><font color=' #ccffff'>fizz</font></a></li>
+  <li><a href="#"><font color=' #ccffff'>kha-zix</font></a></li>
+  <li><a href="#"><font color=' #ccffff'>kindred</font></a></li>
+  <li><a href="#"><font color=' #ccffff'>gragas</font></a></li>
+  <li><a href="#"><font color=' #ccffff'>zed</font></a></li>
+</ul>
+</div>
+<div class="menu">
+  <div id="Main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div class="container" onclick="myFunction(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div> 
+      </span>
+  </div>
+  <div id='textmenu'>
+    <a href="#na.leagueoflegends.com/en/news/game-updates/patch"><font size='6'>Patch Notes</font></a>
+  <a href="#www.lolesports.com/en_US/worlds/current/schedule">
+    <font size='6'>Championship Timetable</font></a>
+    <a href="#www.lolesports.com/"><font size='6'>watch live</font></a>
+</div>
+  </div>
+</div>
+
+  
+</div>
+</body>
+</html>
+
+
+
+
+<a href='#' id='something'> funny montage </a>
+
+<iframe id='video' width="1000" height="600" src="https://www.youtube.com/embed/7QCIULu87yY" frameborder="0" allowfullscreen></iframe>
+<script>
+var selected=0;
+function openNav() {
+   
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    if(selected!=0){
+      document.getElementById("mySidenav").style.width = "0px";
+      document.getElementById("main").style.marginLeft = "0px";
+    }
+    selected=(selected+1)%2;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById("main").style.marginLeft= "0px";
+ 
+}
+function myFunction(x) {
+    x.classList.toggle("change");
+
+}
+function Myfunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+</body>
+</html>
