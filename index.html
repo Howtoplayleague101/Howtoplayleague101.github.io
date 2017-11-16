@@ -12,8 +12,18 @@
 
 <style>
 #video{
-  padding-left:200px;
-  padding-top:140px;
+  position: fixed;
+  top:140px;
+  right: 4%;
+  z-index: 0;
+  -webkit-transition:  right 2s ease, opacity 2s ease;
+  -moz-transition: right 2s ease, opacity 2s ease;
+  -o-transition: right 2s ease, opacity 2s ease;
+  transition: right 2s ease, opacity 2s ease;
+
+
+
+
 }
 
 .container {
@@ -148,12 +158,12 @@ body {margin:0;}
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="#"><font color=' #ccffff'>azir</font></a></li>
-  <li><a href="#"><font color=' #ccffff'>fizz</font></a></li>
-  <li><a href="#"><font color=' #ccffff'>kha'zix</font></a></li>
-  <li><a href="#"><font color=' #ccffff'>kindred</font></a></li>
-  <li><a href="#"><font color=' #ccffff'>gragas</font></a></li>
-  <li><a href="#"><font color=' #ccffff'>zed</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>azir</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>fizz</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>kha'zix</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>kindred</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>Lee sin</font></a></li>
+  <li><a href="#" onclick="document.getElementById('video').style.right='-150%';"><font color=' #ccffff'>zed</font></a></li>
 </ul>
 </div>
 <div class="menu">
@@ -179,12 +189,7 @@ body {margin:0;}
 </div>
 
 
-
-
-
-<a href='#' id='something'> funny montage </a>
-
-<iframe id='video' width="1300" height="720" src="https://www.youtube.com/embed/7QCIULu87yY" frameborder="0" allowfullscreen></iframe>
+<iframe id='video' width="1000" height="600" src="https://www.youtube.com/embed/7QCIULu87yY" frameborder="0" allowfullscreen></iframe>
 <script>
 var selected=0;
 function openNav() {
